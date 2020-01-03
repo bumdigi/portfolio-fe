@@ -47,7 +47,6 @@
     },
     methods: {
       deletePost(id) {
-        console.log(id)
         let uri = `http://localhost:4000/posts/delete/${id}`
         this.axios.delete(uri).then(response => {
           if (response.status === 200) {
